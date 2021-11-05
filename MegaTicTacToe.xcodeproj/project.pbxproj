@@ -1,0 +1,455 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8414EDBE24A6A11400B6603A /* BitBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8414EDBD24A6A11300B6603A /* BitBoard.swift */; };
+		8414EDC424A6FEEA00B6603A /* BitMCTSTreeSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8414EDC324A6FEEA00B6603A /* BitMCTSTreeSearch.swift */; };
+		8416BA4A24A1B7AC00C32A8E /* WinningLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8416BA4924A1B7AC00C32A8E /* WinningLocation.swift */; };
+		842C751C24A7112E0091C158 /* BitState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842C751B24A7112E0091C158 /* BitState.swift */; };
+		842C751E24A711530091C158 /* BitMCTSNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842C751D24A711530091C158 /* BitMCTSNode.swift */; };
+		847857A124A868B6005E58F1 /* MiniBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847857A024A868B6005E58F1 /* MiniBoard.swift */; };
+		847857A324A868DD005E58F1 /* MegaBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847857A224A868DD005E58F1 /* MegaBoard.swift */; };
+		847DFD82249ABFFF00B74E42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847DFD81249ABFFF00B74E42 /* AppDelegate.swift */; };
+		847DFD84249ABFFF00B74E42 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847DFD83249ABFFF00B74E42 /* SceneDelegate.swift */; };
+		847DFD86249ABFFF00B74E42 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847DFD85249ABFFF00B74E42 /* ContentView.swift */; };
+		847DFD88249AC00200B74E42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847DFD87249AC00200B74E42 /* Assets.xcassets */; };
+		847DFD8B249AC00200B74E42 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847DFD8A249AC00200B74E42 /* Preview Assets.xcassets */; };
+		847DFD8E249AC00200B74E42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847DFD8C249AC00200B74E42 /* LaunchScreen.storyboard */; };
+		847DFD96249AC0DD00B74E42 /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847DFD95249AC0DD00B74E42 /* TileView.swift */; };
+		847DFD98249AC0FB00B74E42 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847DFD97249AC0FB00B74E42 /* GameView.swift */; };
+		847DFD9A249ACB8600B74E42 /* MegaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847DFD99249ACB8600B74E42 /* MegaView.swift */; };
+		847DFD9C249ACDFF00B74E42 /* BoardBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847DFD9B249ACDFF00B74E42 /* BoardBackground.swift */; };
+		847DFDA0249B24E700B74E42 /* Tiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847DFD9F249B24E700B74E42 /* Tiles.swift */; };
+		84ABE16924A2832300B7FAD4 /* ColorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ABE16824A2832300B7FAD4 /* ColorButton.swift */; };
+		84ABE16B24A2860100B7FAD4 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84ABE16A24A2860100B7FAD4 /* Colors.xcassets */; };
+		84ABE16D24A28E0600B7FAD4 /* ColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ABE16C24A28E0600B7FAD4 /* ColorManager.swift */; };
+		84B9E6FB24A1292100FE3E44 /* WinningLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B9E6FA24A1292100FE3E44 /* WinningLineView.swift */; };
+		84B9E6FF24A1450100FE3E44 /* MegaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B9E6FE24A1450100FE3E44 /* MegaModel.swift */; };
+		84B9E70324A16FCB00FE3E44 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B9E70224A16FCB00FE3E44 /* Grid.swift */; };
+		84D4F0C924A3B8E000586D29 /* MCTS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D4F0C824A3B8E000586D29 /* MCTS.swift */; };
+		84D4F0CB24A46A9700586D29 /* UCT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D4F0CA24A46A9700586D29 /* UCT.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8414EDBD24A6A11300B6603A /* BitBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitBoard.swift; sourceTree = "<group>"; };
+		8414EDC324A6FEEA00B6603A /* BitMCTSTreeSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitMCTSTreeSearch.swift; sourceTree = "<group>"; };
+		8416BA4924A1B7AC00C32A8E /* WinningLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinningLocation.swift; sourceTree = "<group>"; };
+		842C751B24A7112E0091C158 /* BitState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitState.swift; sourceTree = "<group>"; };
+		842C751D24A711530091C158 /* BitMCTSNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitMCTSNode.swift; sourceTree = "<group>"; };
+		847857A024A868B6005E58F1 /* MiniBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniBoard.swift; sourceTree = "<group>"; };
+		847857A224A868DD005E58F1 /* MegaBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MegaBoard.swift; sourceTree = "<group>"; };
+		847DFD7E249ABFFF00B74E42 /* MegaTicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MegaTicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		847DFD81249ABFFF00B74E42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		847DFD83249ABFFF00B74E42 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		847DFD85249ABFFF00B74E42 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		847DFD87249AC00200B74E42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		847DFD8A249AC00200B74E42 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		847DFD8D249AC00200B74E42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		847DFD8F249AC00200B74E42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		847DFD95249AC0DD00B74E42 /* TileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
+		847DFD97249AC0FB00B74E42 /* GameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		847DFD99249ACB8600B74E42 /* MegaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MegaView.swift; sourceTree = "<group>"; };
+		847DFD9B249ACDFF00B74E42 /* BoardBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardBackground.swift; sourceTree = "<group>"; };
+		847DFD9F249B24E700B74E42 /* Tiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tiles.swift; sourceTree = "<group>"; };
+		84ABE16824A2832300B7FAD4 /* ColorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorButton.swift; sourceTree = "<group>"; };
+		84ABE16A24A2860100B7FAD4 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		84ABE16C24A28E0600B7FAD4 /* ColorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorManager.swift; sourceTree = "<group>"; };
+		84B9E6FA24A1292100FE3E44 /* WinningLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinningLineView.swift; sourceTree = "<group>"; };
+		84B9E6FE24A1450100FE3E44 /* MegaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MegaModel.swift; sourceTree = "<group>"; };
+		84B9E70224A16FCB00FE3E44 /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		84D4F0C824A3B8E000586D29 /* MCTS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCTS.swift; sourceTree = "<group>"; };
+		84D4F0CA24A46A9700586D29 /* UCT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UCT.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		847DFD7B249ABFFF00B74E42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8414EDC024A6A13100B6603A /* Models and Algos */ = {
+			isa = PBXGroup;
+			children = (
+				84B9E6FE24A1450100FE3E44 /* MegaModel.swift */,
+				847857A224A868DD005E58F1 /* MegaBoard.swift */,
+				847857A024A868B6005E58F1 /* MiniBoard.swift */,
+				84D4F0C824A3B8E000586D29 /* MCTS.swift */,
+				84D4F0CA24A46A9700586D29 /* UCT.swift */,
+				842C751A24A710EB0091C158 /* Bits */,
+			);
+			path = "Models and Algos";
+			sourceTree = "<group>";
+		};
+		842C751A24A710EB0091C158 /* Bits */ = {
+			isa = PBXGroup;
+			children = (
+				8414EDC324A6FEEA00B6603A /* BitMCTSTreeSearch.swift */,
+				8414EDBD24A6A11300B6603A /* BitBoard.swift */,
+				842C751B24A7112E0091C158 /* BitState.swift */,
+				842C751D24A711530091C158 /* BitMCTSNode.swift */,
+			);
+			path = Bits;
+			sourceTree = "<group>";
+		};
+		847DFD75249ABFFE00B74E42 = {
+			isa = PBXGroup;
+			children = (
+				847DFD80249ABFFF00B74E42 /* MegaTicTacToe */,
+				847DFD7F249ABFFF00B74E42 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		847DFD7F249ABFFF00B74E42 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				847DFD7E249ABFFF00B74E42 /* MegaTicTacToe.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		847DFD80249ABFFF00B74E42 /* MegaTicTacToe */ = {
+			isa = PBXGroup;
+			children = (
+				847DFD81249ABFFF00B74E42 /* AppDelegate.swift */,
+				847DFD83249ABFFF00B74E42 /* SceneDelegate.swift */,
+				847DFD85249ABFFF00B74E42 /* ContentView.swift */,
+				847DFD99249ACB8600B74E42 /* MegaView.swift */,
+				847DFD97249AC0FB00B74E42 /* GameView.swift */,
+				847DFD95249AC0DD00B74E42 /* TileView.swift */,
+				8414EDC024A6A13100B6603A /* Models and Algos */,
+				84B9E6FC24A1293C00FE3E44 /* Supporting Views */,
+				847DFD87249AC00200B74E42 /* Assets.xcassets */,
+				84ABE16A24A2860100B7FAD4 /* Colors.xcassets */,
+				847DFD8C249AC00200B74E42 /* LaunchScreen.storyboard */,
+				847DFD8F249AC00200B74E42 /* Info.plist */,
+				847DFD89249AC00200B74E42 /* Preview Content */,
+			);
+			path = MegaTicTacToe;
+			sourceTree = "<group>";
+		};
+		847DFD89249AC00200B74E42 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				847DFD8A249AC00200B74E42 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		84B9E6FC24A1293C00FE3E44 /* Supporting Views */ = {
+			isa = PBXGroup;
+			children = (
+				847DFD9F249B24E700B74E42 /* Tiles.swift */,
+				847DFD9B249ACDFF00B74E42 /* BoardBackground.swift */,
+				84B9E70224A16FCB00FE3E44 /* Grid.swift */,
+				84B9E6FA24A1292100FE3E44 /* WinningLineView.swift */,
+				8416BA4924A1B7AC00C32A8E /* WinningLocation.swift */,
+				84ABE16824A2832300B7FAD4 /* ColorButton.swift */,
+				84ABE16C24A28E0600B7FAD4 /* ColorManager.swift */,
+			);
+			path = "Supporting Views";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		847DFD7D249ABFFF00B74E42 /* MegaTicTacToe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 847DFD92249AC00200B74E42 /* Build configuration list for PBXNativeTarget "MegaTicTacToe" */;
+			buildPhases = (
+				847DFD7A249ABFFF00B74E42 /* Sources */,
+				847DFD7B249ABFFF00B74E42 /* Frameworks */,
+				847DFD7C249ABFFF00B74E42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MegaTicTacToe;
+			productName = MegaTicTacToe;
+			productReference = 847DFD7E249ABFFF00B74E42 /* MegaTicTacToe.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		847DFD76249ABFFE00B74E42 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1240;
+				ORGANIZATIONNAME = "Jules Walzer-Goldfeld";
+				TargetAttributes = {
+					847DFD7D249ABFFF00B74E42 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 847DFD79249ABFFE00B74E42 /* Build configuration list for PBXProject "MegaTicTacToe" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 847DFD75249ABFFE00B74E42;
+			productRefGroup = 847DFD7F249ABFFF00B74E42 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				847DFD7D249ABFFF00B74E42 /* MegaTicTacToe */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		847DFD7C249ABFFF00B74E42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				847DFD8E249AC00200B74E42 /* LaunchScreen.storyboard in Resources */,
+				84ABE16B24A2860100B7FAD4 /* Colors.xcassets in Resources */,
+				847DFD8B249AC00200B74E42 /* Preview Assets.xcassets in Resources */,
+				847DFD88249AC00200B74E42 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		847DFD7A249ABFFF00B74E42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				847857A324A868DD005E58F1 /* MegaBoard.swift in Sources */,
+				84D4F0CB24A46A9700586D29 /* UCT.swift in Sources */,
+				847DFD9C249ACDFF00B74E42 /* BoardBackground.swift in Sources */,
+				847DFD82249ABFFF00B74E42 /* AppDelegate.swift in Sources */,
+				847DFD84249ABFFF00B74E42 /* SceneDelegate.swift in Sources */,
+				847DFD9A249ACB8600B74E42 /* MegaView.swift in Sources */,
+				84B9E70324A16FCB00FE3E44 /* Grid.swift in Sources */,
+				847DFD86249ABFFF00B74E42 /* ContentView.swift in Sources */,
+				847DFD96249AC0DD00B74E42 /* TileView.swift in Sources */,
+				847857A124A868B6005E58F1 /* MiniBoard.swift in Sources */,
+				84ABE16D24A28E0600B7FAD4 /* ColorManager.swift in Sources */,
+				847DFD98249AC0FB00B74E42 /* GameView.swift in Sources */,
+				8414EDC424A6FEEA00B6603A /* BitMCTSTreeSearch.swift in Sources */,
+				84ABE16924A2832300B7FAD4 /* ColorButton.swift in Sources */,
+				847DFDA0249B24E700B74E42 /* Tiles.swift in Sources */,
+				842C751C24A7112E0091C158 /* BitState.swift in Sources */,
+				842C751E24A711530091C158 /* BitMCTSNode.swift in Sources */,
+				84B9E6FB24A1292100FE3E44 /* WinningLineView.swift in Sources */,
+				84D4F0C924A3B8E000586D29 /* MCTS.swift in Sources */,
+				8414EDBE24A6A11400B6603A /* BitBoard.swift in Sources */,
+				84B9E6FF24A1450100FE3E44 /* MegaModel.swift in Sources */,
+				8416BA4A24A1B7AC00C32A8E /* WinningLocation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		847DFD8C249AC00200B74E42 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				847DFD8D249AC00200B74E42 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		847DFD90249AC00200B74E42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		847DFD91249AC00200B74E42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		847DFD93249AC00200B74E42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MegaTicTacToe/Preview Content\"";
+				DEVELOPMENT_TEAM = M84RW764H7;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MegaTicTacToe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.WG.MegaTicTacToe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		847DFD94249AC00200B74E42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MegaTicTacToe/Preview Content\"";
+				DEVELOPMENT_TEAM = M84RW764H7;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MegaTicTacToe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.WG.MegaTicTacToe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		847DFD79249ABFFE00B74E42 /* Build configuration list for PBXProject "MegaTicTacToe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				847DFD90249AC00200B74E42 /* Debug */,
+				847DFD91249AC00200B74E42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		847DFD92249AC00200B74E42 /* Build configuration list for PBXNativeTarget "MegaTicTacToe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				847DFD93249AC00200B74E42 /* Debug */,
+				847DFD94249AC00200B74E42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 847DFD76249ABFFE00B74E42 /* Project object */;
+}
