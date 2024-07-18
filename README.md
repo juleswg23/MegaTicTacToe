@@ -1,4 +1,4 @@
-![Tic Tac Toe Sample Board](img/preview.jpg)
+![Tic Tac Toe Sample Board](img/preview.png)
 
 <h2 align="center"><i>Mega Tic-Tac-Toe</i></h2>
 
