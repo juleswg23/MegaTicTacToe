@@ -1,3 +1,5 @@
+![Tic Tac Toe Sample Board](img/preview.jpg)
+
 <h2 align="center"><i>Mega Tic-Tac-Toe</i></h2>
 
 ### Intro
@@ -7,15 +9,20 @@ This game entails 2-player tic tac toe play, in a nested 3x3 board of tic tac to
 The rules can be found online here: https://bejofo.net/ttt.
 
 ## Table of Contents
-- [Installation](##Installation)
-- [Usage](##Usage)
-- [Credits](##Credits)
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [Credits](#Credits)
 
 ## Installation
 
 ### Mac
 
-To download, clone the repo onto your computer.
+To download, clone the repo onto your computer. You will need [XCode](https://apps.apple.com/us/app/xcode/id497799835?mt=12) installed and an Apple Developer account.
+
+`git clone https://github.com/juleswg23/MegaTicTacToe`
+
+Connect an iPhone to your mac by USB and build the project in XCode with the target being your mobile device.
+Run the app on your phone (you may need to trust the developer certificate on your iPhone).
 
 ## Usage 
 
@@ -26,10 +33,10 @@ To play with the computer, click any square to make your move, and then press th
 ### Bot Model
 
 The computer moves are backed by a monte-carlo-tree-search to converge on an optimal move.
-For more details on this algorithm, check out (this version I wrote)[https://github.com/juleswg23/monte-carlo-tree-search] generalized for any mutliplayer turn-based strategy game.
+For more details on this algorithm, check out [this version I wrote](https://github.com/juleswg23/monte-carlo-tree-search) generalized for any mutliplayer turn-based strategy game.
 
 ## Credits
 
-This project was made possible by (100 days of Swift)[https://www.hackingwithswift.com/100] and my favorite (closure aid)[https://fuckingclosuresyntax.com/].
+This project was made possible by [100 days of Swift](https://www.hackingwithswift.com/100) and my favorite [closure aid](https://fuckingclosuresyntax.com/).
 
 
